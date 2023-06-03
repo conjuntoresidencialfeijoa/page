@@ -1756,7 +1756,48 @@
 		var wpforms_settings = { "val_required": "Este campo es obligatorio.", "val_email": "Por favor, introduce una direcci\u00f3n de correo electr\u00f3nico v\u00e1lida.", "val_email_suggestion": "\u00bfQuieres decir {suggestion}?", "val_email_suggestion_title": "Haz clic para aceptar esta sugerencia.", "val_email_restricted": "Esta direcci\u00f3n de correo electr\u00f3nico no est\u00e1 permitida.", "val_number": "Por favor, introduce un n\u00famero v\u00e1lido.", "val_number_positive": "Por favor, introduce un n\u00famero de tel\u00e9fono v\u00e1lido.", "val_confirm": "Los valores del campo no coinciden.", "val_checklimit": "Has excedido el n\u00famero de selecciones permitidas: {#}.", "val_limit_characters": "{count} de {limit} caracteres m\u00e1ximos.", "val_limit_words": "{count} de {limit} palabras m\u00e1ximas.", "val_recaptcha_fail_msg": "Ha fallado la verificaci\u00f3n de Google reCAPTCHA, por favor, int\u00e9ntalo de nuevo m\u00e1s tarde.", "val_empty_blanks": "Por favor, rellena todos los espacios en blanco.", "uuid_cookie": "", "locale": "es", "wpforms_plugin_url": "https:\/\/conjuntoresidencialelcedro.com\/wp-content\/plugins\/wpforms-lite\/", "gdpr": "", "ajaxurl": "https:\/\/conjuntoresidencialelcedro.com\/wp-admin\/admin-ajax.php", "mailcheck_enabled": "1", "mailcheck_domains": [], "mailcheck_toplevel_domains": ["dev"], "is_ssl": "1" }
 /* ]]> */
 	</script>
-
 </body>
+
+<head>
+  <title>Botón PQRS</title>
+  <style>
+    .pqrs-button {
+      position: fixed;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: #61CE70;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s, transform 0.3s, font-size 0.3s;
+      z-index: 9999;
+    }
+
+    .pqrs-button:hover {
+      background-color: #23A455;
+      transform: translateY(-50%) scale(1.2);
+    }
+
+    .pqrs-link {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="pqrs-button">
+    <a href="http://pqrs.conjuntoresidencialfeijoa.com/" target="_blank" class="pqrs-link">PQRS</a>
+  </div>
+</body>
+
+
 
 </html>
