@@ -1757,8 +1757,6 @@
 /* ]]> */
 	</script>
 	
-<div id="contador">  <span id="contador-numero">0</span> visitas </div>
-<script src="contador.js"></script>
   
 </body>
 
@@ -1803,28 +1801,49 @@
 </body>
 
 
-
 <head>
-<style>
-/* estilos.css */
-#contador {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #f1f1f1;
-  padding: 10px;
-  border-radius: 5px;
-}
+  <style>
+    body {
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
 
-#contador-numero {
-  font-weight: bold;
-}
+    #contador {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #contador-numero {
+      font-weight: bold;
+    }
   </style>
 </head>
+<body>
+  <!-- Contenido de tu página -->
 
-<head>
-  <link rel="stylesheet" href="estilos.css">
-</head>
+  <div id="contador">
+    <span id="contador-numero">0</span> visitas
+  </div>
+
+  <script>
+    window.onload = function() {
+      var contadorElemento = document.getElementById("contador-numero");
+
+      var contador = localStorage.getItem("contador") || 0;
+      contador++;
+      contadorElemento.innerText = contador;
+      localStorage.setItem("contador", contador);
+    };
+  </script>
+</body>
+
+
+
+
 
 
 
